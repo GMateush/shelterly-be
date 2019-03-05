@@ -20,6 +20,10 @@ namespace Shelterly.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Animal> Animals { get; set; }
+        public DbSet<Shelter> Shelters { get; set; }
+        public DbSet<Race> Races { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
