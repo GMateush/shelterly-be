@@ -35,6 +35,7 @@ namespace Shelterly.Controllers.Api
             return Ok(animal);
         }
 
+        // api/animals
         [HttpPost]
         public IHttpActionResult AddAnimal(Animal animal)
         {
@@ -46,5 +47,39 @@ namespace Shelterly.Controllers.Api
 
             return Created(new Uri(Request.RequestUri+"/" + animal.Id), animal);
         }
+
+        // api/animals/1
+        [HttpPut]
+        public void UpdateAnimal(int id, Animal animal)
+        {
+            if (!ModelState.IsValid)
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+            var animalInDb = context.Animals.SingleOrDefault(a => a.Id == id);
+
+            if (animalInDb == null)
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+
+            animalInDb.Name = animal.Name;
+            animalInDb.RaceId = animal.RaceId;
+            animalInDb.ShelterId = animal.ShelterId;
+            animalInDb.DateOfBirth = animal.DateOfBirth;
+
+            context.SaveChanges();
+        }
+
+        // api/animals/1
+        [HttpDelete]
+        public void RemoveAnimal(int id)
+        {
+            var animalInDb = context.Animals.SingleOrDefault(a => a.Id == id);
+
+            if (animalInDb == null)
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+
+            context.Animals.Remove(animalInDb);
+            context.SaveChanges();
+        }
+
     }
 }

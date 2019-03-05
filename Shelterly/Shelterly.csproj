@@ -214,6 +214,14 @@
     <Compile Include="Migrations\201903050950543_SeedRace.Designer.cs">
       <DependentUpon>201903050950543_SeedRace.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903051014154_SeedShelter.cs" />
+    <Compile Include="Migrations\201903051014154_SeedShelter.Designer.cs">
+      <DependentUpon>201903051014154_SeedShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903051015551_SeedAnimals.cs" />
+    <Compile Include="Migrations\201903051015551_SeedAnimals.Designer.cs">
+      <DependentUpon>201903051015551_SeedAnimals.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Animal.cs" />
@@ -304,6 +312,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903050950543_SeedRace.resx">
       <DependentUpon>201903050950543_SeedRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903051014154_SeedShelter.resx">
+      <DependentUpon>201903051014154_SeedShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903051015551_SeedAnimals.resx">
+      <DependentUpon>201903051015551_SeedAnimals.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
