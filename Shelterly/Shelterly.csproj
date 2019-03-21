@@ -230,11 +230,15 @@
     <Compile Include="Migrations\201903051015551_SeedAnimals.Designer.cs">
       <DependentUpon>201903051015551_SeedAnimals.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903212240533_AddedDescriptionToRaceAndShelter.cs" />
+    <Compile Include="Migrations\201903212240533_AddedDescriptionToRaceAndShelter.Designer.cs">
+      <DependentUpon>201903212240533_AddedDescriptionToRaceAndShelter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\mati spi to zapisze.cs" />
     <Compile Include="Models\Race.cs" />
     <Compile Include="Models\Shelter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -326,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903051015551_SeedAnimals.resx">
       <DependentUpon>201903051015551_SeedAnimals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903212240533_AddedDescriptionToRaceAndShelter.resx">
+      <DependentUpon>201903212240533_AddedDescriptionToRaceAndShelter.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
