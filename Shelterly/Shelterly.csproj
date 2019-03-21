@@ -234,6 +234,10 @@
     <Compile Include="Migrations\201903212240533_AddedDescriptionToRaceAndShelter.Designer.cs">
       <DependentUpon>201903212240533_AddedDescriptionToRaceAndShelter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903212312417_Removed string length from description.cs" />
+    <Compile Include="Migrations\201903212312417_Removed string length from description.Designer.cs">
+      <DependentUpon>201903212312417_Removed string length from description.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Animal.cs" />
@@ -333,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903212240533_AddedDescriptionToRaceAndShelter.resx">
       <DependentUpon>201903212240533_AddedDescriptionToRaceAndShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903212312417_Removed string length from description.resx">
+      <DependentUpon>201903212312417_Removed string length from description.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

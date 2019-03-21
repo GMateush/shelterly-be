@@ -14,7 +14,6 @@ namespace Shelterly.Models
         [StringLength(255)]
         public string Name { get; set; }
 
-        [StringLength(255)]
         public string Description { get; set; }
 
         public DateTime? DateOfBirth { get; set; }

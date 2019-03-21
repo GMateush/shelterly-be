@@ -20,7 +20,6 @@ namespace Shelterly.Models
         [Required]
         public int Capacity { get; set; }
 
-        [StringLength(255)]
         public string Description { get; set; }
 
         public IList<Animal> Animals { get; set; }
