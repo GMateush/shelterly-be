@@ -35,6 +35,12 @@ namespace Shelterly.Controllers.Api
             return Ok(animal);
         }
 
+        [Route("api/animals/shelter{id}")]
+        public IEnumerable<Animal> GetAnimalsFromShelter(int id)
+        {
+            return context.Animals.Where(a => a.ShelterId == id).ToList();
+        }
+
         // api/animals
         [HttpPost]
         public IHttpActionResult AddAnimal(Animal animal)
@@ -64,6 +70,7 @@ namespace Shelterly.Controllers.Api
             animalInDb.RaceId = animal.RaceId;
             animalInDb.ShelterId = animal.ShelterId;
             animalInDb.DateOfBirth = animal.DateOfBirth;
+            animalInDb.Description = animal.Description;
 
             context.SaveChanges();
         }
