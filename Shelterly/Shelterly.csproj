@@ -242,6 +242,10 @@
     <Compile Include="Migrations\201903222137476_AddedImageUrlToAnimal.Designer.cs">
       <DependentUpon>201903222137476_AddedImageUrlToAnimal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903222240459_AddedImageUrlToShelter.cs" />
+    <Compile Include="Migrations\201903222240459_AddedImageUrlToShelter.Designer.cs">
+      <DependentUpon>201903222240459_AddedImageUrlToShelter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Animal.cs" />
@@ -347,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903222137476_AddedImageUrlToAnimal.resx">
       <DependentUpon>201903222137476_AddedImageUrlToAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903222240459_AddedImageUrlToShelter.resx">
+      <DependentUpon>201903222240459_AddedImageUrlToShelter.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

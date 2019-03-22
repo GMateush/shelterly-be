@@ -22,6 +22,8 @@ namespace Shelterly.Models
 
         public string Description { get; set; }
 
+        public string ImageUrl { get; set; }
+
         public IList<Animal> Animals { get; set; }
     }
 }

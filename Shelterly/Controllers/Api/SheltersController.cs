@@ -64,6 +64,7 @@ namespace Shelterly.Controllers.Api
             shelterInDb.Address = shelter.Address;
             shelterInDb.Capacity = shelter.Capacity;
             shelterInDb.Description = shelter.Description;
+            shelterInDb.ImageUrl = shelter.ImageUrl;
 
             context.SaveChanges();
         }
