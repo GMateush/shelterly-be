@@ -238,6 +238,10 @@
     <Compile Include="Migrations\201903212312417_Removed string length from description.Designer.cs">
       <DependentUpon>201903212312417_Removed string length from description.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903222137476_AddedImageUrlToAnimal.cs" />
+    <Compile Include="Migrations\201903222137476_AddedImageUrlToAnimal.Designer.cs">
+      <DependentUpon>201903222137476_AddedImageUrlToAnimal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Animal.cs" />
@@ -340,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903212312417_Removed string length from description.resx">
       <DependentUpon>201903212312417_Removed string length from description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903222137476_AddedImageUrlToAnimal.resx">
+      <DependentUpon>201903222137476_AddedImageUrlToAnimal.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

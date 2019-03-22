@@ -28,5 +28,7 @@ namespace Shelterly.Models
         [Required]
         public int ShelterId { get; set; }
 
+        public string ImageUrl { get; set; }
+
     }
 }

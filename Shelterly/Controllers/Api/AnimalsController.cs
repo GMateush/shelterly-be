@@ -71,6 +71,7 @@ namespace Shelterly.Controllers.Api
             animalInDb.ShelterId = animal.ShelterId;
             animalInDb.DateOfBirth = animal.DateOfBirth;
             animalInDb.Description = animal.Description;
+            animalInDb.ImageUrl = animal.ImageUrl;
 
             context.SaveChanges();
         }
